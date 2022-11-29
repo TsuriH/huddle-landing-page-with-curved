@@ -1,0 +1,386 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primary-color-pink: hsl(322, 100%, 66%);
+    --primary-color-light-pink: hsl(321, 100%, 78%);
+    --primary-color-light-red: hsl(0, 100%, 63%);
+    --neutral-very-dark-cyan: hsl(192, 100%, 9%);
+    --neutral-very-pale-blue: hsl(207, 100%, 98%);
+
+}
+
+body {
+
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    /* padding: 2em; */
+
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.huddle-logo {
+    width: 150px;
+    /*Is there a more correct way to resize the image*/
+
+}
+
+.upper-cta {
+    box-shadow: 0px 0px 5px var(--primary-color-pink);
+
+    text-decoration: none;
+    color: var(--primary-color-pink);
+    border: 1px var(--primary-color-pink) solid;
+    border-radius: 20px;
+    padding: 0.4em 2em;
+    font-size: 0.7em;
+
+}
+
+.main {
+    text-align: center;
+}
+
+.container {
+
+    padding: 1.6em;
+    margin: 0px 2em;
+}
+
+.hero .container {
+    margin: 0px;
+
+}
+
+.main-content h1 {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: var(--neutral-very-dark-cyan);
+    /* margin-bottom: 20px; */
+}
+
+.advantage-wrapper h2,
+.main-content h1 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main-content {
+    padding: 1em 2em;
+}
+
+.main-content>* {
+    margin-bottom: 20px;
+}
+
+.primary-cta {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.93em;
+    background-color: var(--primary-color-pink);
+    padding: 0.85em 3.1em;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0px 2px 7px 1px var(--primary-color-pink);
+
+}
+
+.description {
+    padding: 1.1em;
+    margin-bottom: 4em;
+}
+
+.screen-mockups {
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+.primary-cta {
+    margin-bottom: 100px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.card {
+    /* border: 2px solid; */
+    text-align: left;
+
+
+}
+
+.card img {
+    width: 18%;
+}
+
+.card h2 {
+    font-size: 3em;
+    color: var(--neutral-very-dark-cyan)
+}
+
+.card p {
+    font-size: 0.6em;
+    color: var(--neutral-very-dark-cyan)
+}
+
+.card p span {
+    display: block;
+}
+
+.msg-sent {
+
+    text-align: center;
+}
+
+.card>* {
+    margin-bottom: 4px;
+}
+
+.advantage-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    /* padding: 1.6em; */
+    gap: 5em;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.details h2 {
+    margin-bottom: 0.8em;
+}
+
+.our-advantages {
+    margin-top: 12em;
+}
+
+.advantage-wrapper:nth-child(odd) {
+    background-image: url("./images/bg-section-top-mobile-1.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* border: 2px solid red; */
+    z-index: -1;
+}
+
+.our-advantages .container>* {
+
+    margin-bottom: 300px;
+}
+
+.last-cta .container {
+    text-align: center;
+
+}
+
+.last-cta a {
+    padding: 0.6em 3.3em;
+    background-color: var(--primary-color-pink);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: inline-block;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column-reverse;
+    /* background-image: url("./images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: green;
+    color: white;
+    margin: 0px;
+    gap: 80px;
+
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.right-column p {
+    font-size: 0.8em;
+}
+
+.right-column input {
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.right-column button {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--primary-color-pink);
+    padding: 0.9em 2.3em;
+    font-weight: bold;
+
+}
+
+.subscribe {
+    text-align: right;
+    position: relative;
+}
+
+.left-column img {
+    /* background-color: white; dont know how to make the logo in the footer white  */
+
+
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /*Can i use something is not px*/
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    /*Can i use something is not px*/
+}
+
+.phone,
+.email {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+}
+
+.fa-facebook-f,
+.fa-twitter {
+    background: rgb(26, 26, 77);
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+.socials>* {
+    margin-right: 0.5em;
+}
+
+.footer-description img {
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 1040px) {
+
+    .container {}
+
+    .description {
+
+        margin: 20px auto;
+        max-width: 510px;
+        /* border: 2px solid; */
+    }
+
+
+    .data {
+        justify-content: space-around;
+        /* border: 2px solid; */
+        flex-direction: row;
+    }
+
+    .card h2 {
+        font-size: 7em;
+    }
+
+    .card p {
+        font-size: 1.8em;
+
+
+    }
+
+    .card p span {
+        display: inline;
+    }
+
+    .advantage-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+        gap: 200px;
+        /* border: 2px solid; */
+
+    }
+
+    .advantage-wrapper .details {
+        text-align: left;
+
+    }
+
+    .advantage-wrapper .details {
+        max-width: 530px;
+        /* border: 5px solid; */
+    }
+
+    .flowing {
+        flex-direction: row-reverse;
+    }
+
+    .image-container img {
+        width: 80%;
+        height: auto;
+    }
+
+
+    .last-cta .container h2 {
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+
+    footer .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .container > *{
+        max-width: 300px;
+    }
+
+    .right-column button {
+        position: absolute;
+        top: 1.5px;
+        left: 25.4em;
+        padding: 0.7em 2.3em;
+    }
+
+   
+
+
+}
